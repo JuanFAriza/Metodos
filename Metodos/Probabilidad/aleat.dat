@@ -1,0 +1,44 @@
+plot results.dat u 1:2
+plot 'results.dat' u 1:2
+exit
+plot [0:100] 'results.dat' u 1:2
+exit
+plot [0:100] 'results.dat' u 1:2
+exit
+plot [0:100] 'results.dat' u 1:2
+exit
+plot [0:100] 'results.dat' u 1:2
+plot [0:100] 'results.dat' u 1:($2**2 + $3**2)
+plot [0:100] 'results.dat' u 1:($2**2 + $3**2)
+plot 'results.dat' u 1:($2**2 + $3**2)
+replot 'results.dat' u 1:($4**2 + $5**2)
+exit
+plot 'results.dat' u 1:($2**2 + $3**2)
+replot 'results.dat' u 1:($4**2 + $5**2)
+exit
+plot 'results.dat' u 1:($2**2 + $3**2)
+replot 'results.dat' u 1:($4**2 + $5**2)
+exit
+q
+gnu "prueba.dat"
+plot "prueba.dat"
+exit()
+plot "prueba.dat"
+exit()
+plot 'walk.txt'
+exit()
+plot "walk.txt"
+exit()
+plot "walk.txt"
+exit()
+plot "wal.txt"
+exit()
+plot 'data_A.txt'
+replot 'data_B.txt'
+splot 'data_C.txt'
+q
+plot 'Ondas1D.dat'
+quit()
+plot 'Onda1D.dat'
+quit()
+hist('aleat.dat')
